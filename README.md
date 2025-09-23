@@ -3,3 +3,4 @@ editin masi ga ngerti gwa ya allah
 AAGGHGHGHHGHGHHGGHGHHG HEEELPPP
 
 baris baru lagi buat percobaan 2
+aokwoakwkoakokaowokawok
