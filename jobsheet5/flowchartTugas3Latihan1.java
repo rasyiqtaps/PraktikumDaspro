@@ -2,7 +2,7 @@ package jobsheet5;
 
 import java.util.Scanner;
 
-public class flowchartTugas3 {
+public class flowchartTugas3Latihan1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
