@@ -13,16 +13,22 @@ public class flowchartTugas3Latihan2 {
             System.out.println("Akses Anda diberikann sebagai Dosen.");
 
         } else {
-        System.out.print("Berapa SKS yang Kamu ambil: ");
-        int SKS = sc.nextInt();
+            System.out.print("Apakah kamu Mahasiswa? (true/false): ");
+            boolean mahasiswa = sc.nextBoolean();
 
+            if (mahasiswa) {
+                System.out.print("Masukan jumlah SKS yang kamu ambil: ");
+                int SKS = sc.nextInt();
 
-
-        if (SKS >= 12) {
-            System.out.println("Akses anda diberikan sebagai Mahasiswa");
-
-         } else { System.out.println("Akses Anda ditolak!");
-    }
-}
+                if (SKS >= 12) {
+                    System.out.println("Akses Anda diberikan sebagai Mahasiswa.");
+                } else {
+                    System.out.println("Akses anda ditolak karena SKS kurang dari 12!");
+                }
+            }
+            else {
+                System.out.println("Akses Anda ditolak!");
+            }
+        }
     }
 }
