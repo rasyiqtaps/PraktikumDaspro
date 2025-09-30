@@ -11,8 +11,8 @@ public class ifCetakKRS25Tugas1 {
         boolean uktlunas = sc.nextBoolean();
 
         String hasil = (uktlunas)
-                ? "KRS Semester " + uktlunas + " Ditampilkan"
-                : "Semester Tidak Valid";
+                ? "Pembayaran UKT terverifikasi. Silahkan cetak KRS dan minta tanda tangan DPA"
+                : "registrasi ditolak. Silahkan lunasi UKT terlebih dahulu";
 
         System.out.println("[Ternary]" + hasil);
     }
