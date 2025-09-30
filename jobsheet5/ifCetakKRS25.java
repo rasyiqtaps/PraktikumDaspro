@@ -18,6 +18,7 @@ public class ifCetakKRS25 {
         } else {
 
             System.out.println("registrasi ditolak. Silahkan lunasi UKT terlebih dahulu");
+            //Salah nulis message
         }
     }
 }
