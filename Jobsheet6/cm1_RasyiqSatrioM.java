@@ -107,9 +107,9 @@ public class cm1_RasyiqSatrioM {
         String staSem;
         if (nilaiAkhir1>=60 && nilaiAkhir2>=60) {
             if (rtRt>=70) {
-                staSem = "LULUSSSSS YAYYYYYYYY";
+                staSem = "LULUS";
             } else {
-                staSem = "TIDAK LULUSSSS (Rata-Rata mu kurang dari 70!!!)";
+                staSem = "TIDAK LULUS (Rata-Rata mu kurang dari 70)";
             }
         } else {
             staSem = "Ada Materimu yang statusnya tidak lulus!!";
