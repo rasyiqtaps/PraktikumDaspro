@@ -154,18 +154,17 @@ public class cm1_RasyiqSatrioM {
         } else {
             staSem = "Ada Materimu yang statusnya tidak lulus!!";
         }
-
         //rata rata terbesar
         String rtRtTerbesar = "";
         if (nilaiAkhir1 > nilaiAkhir2) {
             if (nilaiAkhir1 > nilaiAkhir3) {
-                rtRtTerbesar = "Rata-Rata 1 (" + nilaiAkhir1 + ")";
-            } 
+                rtRtTerbesar = "Rata-Rata 1 (" + nilaiAkhir1 + ")"; 
+            }
         } else if (nilaiAkhir2 > nilaiAkhir3) {
-                rtRtTerbesar = "Rata-Rata 2 (" + nilaiAkhir2 + ")";
-            } else {
-                rtRtTerbesar = "Rata-Rata 3 (" + nilaiAkhir3 + ")";
-
+            rtRtTerbesar =  "Rata-Rata 2 (" + nilaiAkhir2 + ")";
+        } else {
+            rtRtTerbesar =  "Rata-Rata 3 (" + nilaiAkhir3 + ")";
+        }
 
         System.out.println("==================== HASIL PENILAIAN AKADEMIK ====================");
         System.out.println("Nama\t: Rasyiq Satrio Musthafa");
@@ -173,13 +172,13 @@ public class cm1_RasyiqSatrioM {
 
         System.out.println("Mata Kuliah\t\tUTS\tUAS\tTUGAS\tNilai Akhir\tNilai Huruf\tStatus");
         System.out.println("----------------------------------------------------------------------------------------------------------");
-        System.out.println(String.format("Algoritma Pemrograman\t%s\t%s\t%s\t%s\t\t%s\t\t%s  ", uts1, uas1, tgs1, nilaiAkhir1, nilaiHuruf1, sts1));
-        System.out.println(String.format("Algoritma Pemrograman\t%s\t%s\t%s\t%s\t\t%s\t\t%s  ", uts2, uas2, tgs2, nilaiAkhir2, nilaiHuruf2, sts2));
-        System.out.println(String.format("Algoritma Pemrograman\t%s\t%s\t%s\t%s\t\t%s\t\t%s  ", uts3, uas3, tgs3, nilaiAkhir3, nilaiHuruf3, sts3));
+        System.out.printf("Algoritma Pemrograman\t%.2f\t%.2f\t%.2f\t%.2f\t\t%s\t\t%s  \n", uts1, uas1, tgs1, nilaiAkhir1, nilaiHuruf1, sts1);
+        System.out.printf("Algoritma Pemrograman\t%.2f\t%.2f\t%.2f\t%.2f\t\t%s\t\t%s  \n", uts2, uas2, tgs2, nilaiAkhir2, nilaiHuruf2, sts2);
+        System.out.printf("Algoritma Pemrograman\t%.2f\t%.2f\t%.2f\t%.2f\t\t%s\t\t%s  \n", uts3, uas3, tgs3, nilaiAkhir3, nilaiHuruf3, sts3);
         System.out.println("");
         System.out.println("Rata-Rata Nilai Akhir\t: "+ rtRt);
         System.out.println("Nilai rata-rata terbesarmu adalah: " + rtRtTerbesar);
         System.out.println("Status Semester\t: "+ staSem);
-    }
+    
 }
 }
