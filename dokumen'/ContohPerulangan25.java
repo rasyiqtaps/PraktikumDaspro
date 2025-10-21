@@ -20,9 +20,10 @@ public class ContohPerulangan25 {
                 pekerja++;
                 continue;
 
-            } if (jamKerja >= 0) {
+            } else if (jamKerja >= 0) {
                 System.out.println("kamu tidak mendapatkan bonus.");
                 pekerja++;
+                
             } else {
                 System.out.println("angka tidak valid. program berhenti.");
                 break;
