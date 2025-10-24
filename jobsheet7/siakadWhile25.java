@@ -1,3 +1,4 @@
+package jobsheet7;
 import java.util.Scanner;
 
 public class siakadWhile25 {
