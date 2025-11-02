@@ -18,7 +18,7 @@ public class triangle25 {
                 System.out.print("* ");
                 j++;
             }
-            System.out.println("* ");//jobsheet lupa menambahkan output di loop outer
+            //System.out.println("* ");//jobsheet lupa menambahkan output di loop outer
             i++;
         }
     }
