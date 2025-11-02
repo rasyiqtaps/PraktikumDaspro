@@ -17,3 +17,4 @@ public class square25 {
         }
     }
 }
+//sepertinya percobaan 2 tidak ada yang perlu dimodifikasi di jobsheet.
