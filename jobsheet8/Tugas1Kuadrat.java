@@ -6,7 +6,7 @@ public class Tugas1Kuadrat {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("n: ");
+        System.out.print("masukan jumlah n: ");
         int n = sc.nextInt();
 
         for (int i = 1; i <= n; i++) {
