@@ -6,7 +6,10 @@ public class modArrayRataNilai25 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        int[] nilaiMhs= new int[5];
+        System.out.print("Masukan Jumlah mahasiswa: ");
+        int Mhs = sc.nextInt();
+
+        int[] nilaiMhs= new int[Mhs];
         double total = 0;
         double rata2, rtRtLulus = 0, rtRtTdkLulus = 0;
         int jmlLulus = 0, jmlTdkLulus = 0;
