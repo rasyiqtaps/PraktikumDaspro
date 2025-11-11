@@ -26,7 +26,6 @@ public class bioskopWithScanner25 {
 
             if (next.equalsIgnoreCase("n")) {
                 break;
-
             }
         }
     }
