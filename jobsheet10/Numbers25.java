@@ -1,5 +1,7 @@
 package jobsheet10;
 
+import java.util.Arrays;
+
 public class Numbers25 {
     public static void main(String[] args) {
         int[][] myNumbers = new int[3][];
