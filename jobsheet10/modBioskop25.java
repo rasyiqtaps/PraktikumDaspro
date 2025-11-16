@@ -20,7 +20,8 @@ public class modBioskop25 {
     System.out.println("Penonton baris ke-3: ");
 
         for (String i : penonton[2]) {
-            System.out.print(i + " ");          
+            System.out.print(i + " ");   
+                   
         }    
     }
 }
