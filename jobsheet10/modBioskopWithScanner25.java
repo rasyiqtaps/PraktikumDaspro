@@ -69,6 +69,7 @@ public class modBioskopWithScanner25 {
                 System.out.println("Perintah tidak diketahui.");
                 System.out.println(" ");
                     break;
+                    
             }
         }
     }
