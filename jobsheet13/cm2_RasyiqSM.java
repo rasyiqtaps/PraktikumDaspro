@@ -28,7 +28,7 @@ public class cm2_RasyiqSM {
         System.out.println( "====PENCATATAN PRESTASI MAHASISWA====");
         System.out.println(" Masukan nomor untuk memilih menu yang kamu mau:");
         while (keluar) {
-            System.out.println(" 1. Tambah Data Prestasi. \n 2. Tampilkan Semua Prestasi yang dimasukan. \n 3. Riwayat Prestasi Bedasarkan Tahun. \n 4. Riwayat Tingkat Prestasi. \n 5. Keluar Program. \n");
+            System.out.println(" 1. Tambah Data Prestasi. \n 2. Tampilkan Semua Prestasi yang dimasukan. \n 3. Riwayat Prestasi Bedasarkan Tahun. \n 4. Riwayat Tingkat Prestasi. \n 5. Total Prestasi Mahasiswa \n 6. Keluar Program. \n ");
             System.out.print("===>:");
             menu = sc.nextInt();
             switch (menu) {
@@ -47,8 +47,12 @@ public class cm2_RasyiqSM {
                 case 4:
                     tingkatDataPrestasi();
                     break;
-
+                
                 case 5:
+                    totalPrestasiNim();
+                    break;
+
+                case 6:
                     keluar = false;
                     break;
             
@@ -215,5 +219,33 @@ public class cm2_RasyiqSM {
         System.out.println("Nasional\t:" + nasional);
         System.out.println("Internasional\t:" + internasional);
         System.out.println("");
+    }
+    static void totalPrestasiNim() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\nMasukan NIM Mahasiswa Yang dicari: ");
+
+            int prestasi = 0;
+            String NIM = sc.nextLine();
+            System.out.println("");
+
+            boolean ditemukan = false;
+            for (int i = 0; i < arrayDaftarPrestasiMahasiswa.length; i++) {
+                if (arrayDaftarPrestasiMahasiswa[i][1].equals(String.valueOf(NIM))) {
+                    ditemukan = true;
+                    prestasi++;
+                }
+            }
+            if (!ditemukan) {
+                System.out.println("\n====================");
+                System.out.println("NIM Tidak ditemukan/Tidak ada prestasi.");
+                System.out.println("====================\n");
+            }
+
+            if (ditemukan) {
+                System.out.println("============================");
+                System.out.println("Prestasimu ada: " + prestasi);
+                System.out.println("============================\n");  
+            }
+
     }
 }
